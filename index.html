@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sitemap Generator</title>
+	<link rel="stylesheet" href="./assets/app.css" />
+	<link rel="stylesheet" href="./assets/bulma.min.css" />
+</head>
+<body>
+	<section class="hero is-dark is-bold">
+    	<div class="hero-body">
+        	<div class="container">
+				<small class="is-pulled-right is-size-7">
+					v.1.0.1
+				</small>
+				<h1 class="title">
+				Sitemap Generator
+				</h1>
+				
+				<h2 class="subtitle is-6">
+				For small and large sites
+				</h2>
+				<div  id="form">
+					<div class="columns">
+						<div class="column is-6">
+							<div class="field has-addons">
+								<div class="control is-expanded">
+									<input class="input" type="url"  id="url" placeholder="https://example.com">
+								</div>
+								<div class="control">
+									<a class="button is-success" id="start">
+										Start
+									</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+	</section>
+	<section class="section" id="message">
+		
+			
+		<input class="is-hide"  type="file" id="path" webkitdirectory />
+			
+		<div class="column is-12">
+			<h1 class="title is-4">Start now following the next steps</h1>
+			<ol type="1" style="margin-left:20px">
+				<li>Put your url</li>
+				<li>Click on Start button</li>
+				<li>Wait...</li>
+			</ol>
+		</div>
+	</section>
+
+	<div class="container is-hide" id="download">
+		<div class="columns is-mobile is-centered is-vcentered" style="margin-top:20px">
+			<div class="column is-half has-text-centered">
+				<div id="resumen" class="is-bold notification" style="margin-bottom:10px"></div>
+				<button class="button is-success" id="down">Get Files</button>
+				<button class="button is-info" id="newSitemap">New Sitemap</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container is-hide" id="progress">
+		<div class="columns is-mobile is-centered is-vcentered" style="margin-top:20px">
+			<div class="column is-half">
+				<div style="margin-bottom:5px" class="is-clearfix">
+					<small class="is-pulled-left is-size-7" id="c">Craweling....</small>	
+					<small class="is-pulled-right has-text-grey is-size-7 is-bold" id="count">0</small>	
+				</div>
+				<progress class="is-marginless progress is-small is-primary" max="100">15%</progress>
+				<div class="container is-clearfix" style="margin-top:5px">
+					<small class="has-text-grey is-size-7 is-pulled-left" id="rate">...</small>
+					<small class="has-text-grey is-size-7 is-pulled-right " id="time">00:00:00</small>
+				</div>
+				<div class="container" style="min-height:40px">
+					<small class="has-text-primary" id="last">...</small>
+				</div>
+				<button class="button is-danger is-small" id="cancel" style="margin-top:20px">Cancel</button>
+			</div>
+		</div>
+	</div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./sitemap.js')
+      //require('./renderer.js')
+    </script>
+	</body>
+</html>

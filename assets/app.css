@@ -1,0 +1,16 @@
+body{
+
+    margin:0px;
+    background-color:#FFF;
+    
+}
+*{
+    user-select:none;
+}
+.is-vcentered {
+  display: flex;
+  align-items: center;
+}
+.is-hide{
+    display:none;
+}
