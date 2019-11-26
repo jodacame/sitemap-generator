@@ -11,3 +11,5 @@ npm install
 electron .
 `````
 
+**Tested in MacOS**
+
