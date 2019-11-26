@@ -1,4 +1,4 @@
-#Sitemap Generator made with electron
+# Sitemap Generator made with electron
 
 Sitemap app generator for large websites
 
