@@ -4,7 +4,9 @@
   "description": "Desktop Sitemap Generator for Large Websites",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": "https://github.com/jodacame/sitemap-generator.git",
   "keywords": [
@@ -17,6 +19,7 @@
   "author": "Jodacame",
   "devDependencies": {
     "electron": "^4.0.3",
+    "electron-builder": "^21.2.0",
     "electron-packager": "^14.1.1"
   },
   "dependencies": {
@@ -29,6 +32,9 @@
     "appId": "com.jodacame.sitemap",
     "productName": "Sitemap Generator",
     "copyright": "Copyright © 2019 Jose Daniel Canchila",
-    "category": "public.app-category.developer-tools"
+    "category": "public.app-category.developer-tools",
+    "mac": {
+      "category": "your.app.category.type"
+    }
   }
 }
